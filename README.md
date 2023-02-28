@@ -1,5 +1,10 @@
 # pokeapi graphql sample
 
+## api
+
+pokeapi
+https://pokeapi.co/
+
 ## 参考
 
 ポケモン API を使って GraphQL を今更覚える！
