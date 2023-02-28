@@ -9,7 +9,8 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "lint": "next lint --dir src",
-    "fmt": "prettier --write \"{src,__tests__}/**/*.{ts,tsx,scss}\""
+    "fmt": "prettier --write \"{src,__tests__}/**/*.{ts,tsx,scss}\"",
+    "codegen": "graphql-codegen --config codegen.ts"
   },
   "lint-staged": {
     "{src,__tests__}/**/*.{ts,tsx}": "yarn fmt"
@@ -26,6 +27,7 @@
     "axios": "^1.3.4",
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.1",
+    "graphql": "^16.6.0",
     "next": "13.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -34,6 +36,11 @@
     "typescript": "4.9.5"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "3.2.1",
+    "@graphql-codegen/client-preset": "2.1.0",
+    "@graphql-codegen/introspection": "3.0.1",
+    "@graphql-codegen/typescript": "^3.0.1",
+    "@graphql-codegen/typescript-operations": "^3.0.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
